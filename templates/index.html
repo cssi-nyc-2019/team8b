@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<style>
-		
-	</style>
-	<title>
-	</title>
 	<link rel="stylesheet" type="text/css" href="/styles/style.css">
+	<script type="script.js"></script>
 </head>
 <body>
-
-
-<div class = "logo">
-
-	<img src="/images/Starkmusic.png">
+	<div id="clay"><input class = "logo" type="image" onclick="document.getElementById('id01').style.display='block'" style="width:25%;" id="saveform" src="/images/Starkmusic.png" alt="log in" > </div>
+<div id="id01" class="modal">
+ 
+  <form class="modal-content animate" method="post" action="/">
+ 
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+       
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  </form>
 </div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+clicked = false
+// When the user clicks anywhere outside of the modal, close it
+clay.onclick = function(event) {
+	
+		if  (!clicked){
+			modal.style.display = "block"
+			clicked=true
+		}
+		else{
+        	modal.style.display = "none";
+        	clicked = false
+  		 }
+}
+</script>
 
 </body>
 </html>

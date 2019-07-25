@@ -1,7 +1,7 @@
 body{
   background-image: url("/images/Gradient.png");
 	background-repeat: no-repeat;
-	background-size: 2000px;
+	background-size: fill;
 	background-position: center 15%;
 }
 .center {
@@ -11,12 +11,86 @@ body{
   width: 50%;
 }
 
-img {
- 	position:absolute;
- 	left: 37%;
- 	bottom: 35%;
- 	size: 50px;
-  	max-width: 2000px;
-  	height: 300px;
-
+input.logo{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width:25%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
   }
+input.logo:hover{
+  -webkit-transform: rotate(450deg);
+}
+
+input:focus{
+
+outline:0;
+border: none;
+
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: block;
+  border: 2px solid white;
+  border-radius: 25px;
+  box-sizing: border-box;
+  background-color: none;
+
+}
+
+/* Set a style for all buttons */
+button.annoying{
+  opacity:0%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  display: inline-block;
+  float: right;
+  padding-top: 0px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: absolute; /* Stay in place */
+  z-index: 1; 
+  top: 60%;
+  margin: auto;
+  width: 100%; 
+  height: 100%; 
+  font-family: sans-serif;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  color:white;
+  margin: auto;
+  text-align: center;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
