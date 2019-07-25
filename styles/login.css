@@ -1,5 +1,7 @@
 body {
   
+
+
   background-image: url("/images/Gradient.png");
   background-repeat: no-repeat;
   background-size: 2000px;
@@ -57,6 +59,17 @@ body {
 
 }
 
+#mainlogo{
+
+  max-width: 20px;
+  max-height: 20px;
+
+
+}
+
+}
+
+
 .container-1{
   width: 300px;
   vertical-align: middle;
@@ -78,6 +91,10 @@ body {
   right:30px
 
 }
+
+
+
+
 
 /* When the input field gets focus, change its width to 100% */
 input[type=search]:focus {
